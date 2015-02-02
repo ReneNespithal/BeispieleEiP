@@ -1,6 +1,5 @@
 public class Rekursion {
 
-    // Implementieren Sie hier die Methode exp(x,n)
     public static double exp(double x, int y) {
         if(y==0)
             return 0;
@@ -10,7 +9,6 @@ public class Rekursion {
             return x*exp(x,y-1);
     }
 
-    // Implementieren Sie hier die Methode fakultaet(n)
     public static int fakultaet(int x) {
         if(x==0)
             return 1;
@@ -18,7 +16,6 @@ public class Rekursion {
             return x*fakultaet(x-1);
     }
 
-    // Implementieren Sie hier die Methode istPrim(n)
     public static int t = 2;
     public static boolean istPrim(int x) {
         if(x==0||x==1)
@@ -45,8 +42,6 @@ public class Rekursion {
             return(ggt(y - x, x));
     }
 
-    // Implementieren Sie hier die Methode rebase(n,p)
-    //public static String rebase(int x, int y)static String txt;
     static String txt;
     public static String rebase(int x, int y) {
         txt = "";
