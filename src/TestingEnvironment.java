@@ -33,12 +33,25 @@ public class TestingEnvironment {
     }
 
     public static void invertieren(int[] array) {
-        //System.out.println(Arrays.toString(array));
+        System.out.println(Arrays.toString(array));
         int[] newArray = new int[array.length];
         for (int i = 0; i < array.length; i++) {
             newArray[i] = array[(array.length - 1) - i];
         }
-        //System.out.println(Arrays.toString(newArray));
+        System.out.println(Arrays.toString(newArray));
+    }
+
+    public static boolean isPalindrom(int[] array) {
+        boolean result = false;
+        for(int i = 0; i < array.length/2; i++){
+            if(array[i]==array[(array.length-1)-i]){
+                result = true;
+            } else {
+                result = false;
+                break;
+            }
+        }
+        return result;
     }
 
 
@@ -56,5 +69,8 @@ public class TestingEnvironment {
         System.out.println("}"); // { 0 1 1 2 3 5 }
         int[] test3 = {0, 1, 2};
         invertieren(test3);
+        int[] test4 = {0, 1, 2, 1, 0};
+        System.out.println(isPalindrom(test3));
+        System.out.println(isPalindrom(test4));
     }
 }
