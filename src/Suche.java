@@ -1,8 +1,5 @@
 public class Suche {
     public static boolean sucheLineare(int[] array, int wert) {
-        if (array.length == 0) {
-            return false;
-        }
         for (int i = 0; i < array.length; i++) {
             if (array[i] == wert) {
                 return true;
