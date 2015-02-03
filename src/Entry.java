@@ -1,11 +1,7 @@
 public class Entry<T> {
-    /**
-     * Eigentliches Element
-     */
+    //Eigentliches Element
     private T element;
-    /**
-     * Verweis auf das na ̈chste Element
-     */
+    // Verweis auf das nächste Element
     private Entry<T> next;
 
     /**
