@@ -7,7 +7,7 @@ public class Suche {
         }
         return false;
     }
-
+    /*
     public static boolean sucheBinaer(int[] array, int wert) {
         // Leeres Array
         if (array.length <= 1) {
@@ -37,25 +37,24 @@ public class Suche {
         }
         return false;
     }
+    */
 
-    /*
-    private static boolean hilfsfkt(int a, int[] array, int start, int end) {
+    private static boolean hilfsfkt(int wert, int[] array, int start, int end) {
         if (start >= end) {
-            return array[start] == a;
+            return array[start] == wert;
         }
         int mitte = (start + end) / 2;
-        return array[mitte] == a
-                || hilfsfkt(a, array, start, mitte - 1)
-                || hilfsfkt(a, array, mitte + 1, end);
+        return array[mitte] == wert
+                || hilfsfkt(wert, array, start, mitte - 1)
+                || hilfsfkt(wert, array, mitte + 1, end);
     }
 
-    public static boolean sucheBinaer(int[] array, int a) {
+    public static boolean sucheBinaer(int[] array, int wert) {
         if (array.length == 0) {
             return false;
         }
-        return hilfsfkt(a, array, 0, array.length - 1);
+        return hilfsfkt(wert, array, 0, array.length - 1);
     }
-     */
 
     public static void main(String[] args) {
         int[] test1 = {};
