@@ -1,3 +1,5 @@
+package thinkthank;
+
 public class Link {
 
     // Set to public so getters & setters aren't needed
@@ -5,8 +7,8 @@ public class Link {
     public String bookName;
     public int millionsSold;
 
-    // Reference to next link made in the LinkList
-    // Holds the reference to the Link that was created before it
+    // Reference to next link made in the thinkthank.LinkList
+    // Holds the reference to the thinkthank.Link that was created before it
     // Set to null until it is connected to other links
 
     public Link next;
@@ -34,7 +36,7 @@ public class Link {
 
         LinkList theLinkedList = new LinkList();
 
-        // Insert Link and add a reference to the book Link added just prior
+        // Insert thinkthank.Link and add a reference to the book thinkthank.Link added just prior
         // to the field next
 
         theLinkedList.insertFirstLink("Don Quixote", 500);
@@ -46,7 +48,7 @@ public class Link {
 
         System.out.println("Value of first in LinkedList " + theLinkedList.firstLink + "\n");
 
-        // Removes the last Link entered
+        // Removes the last thinkthank.Link entered
 
         theLinkedList.removeFirst();
 

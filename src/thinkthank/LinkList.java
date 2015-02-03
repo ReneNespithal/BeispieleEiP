@@ -1,19 +1,21 @@
+package thinkthank;
+
 class LinkList {
 
-    // Reference to first Link in list
-    // The last Link added to the LinkedList
+    // Reference to first thinkthank.Link in list
+    // The last thinkthank.Link added to the LinkedList
 
     public Link firstLink;
 
     LinkList() {
 
-        // Here to show the first Link always starts as null
+        // Here to show the first thinkthank.Link always starts as null
 
         firstLink = null;
 
     }
 
-    // Returns true if LinkList is empty
+    // Returns true if thinkthank.LinkList is empty
 
     public boolean isEmpty() {
 
@@ -25,7 +27,7 @@ class LinkList {
 
         Link newLink = new Link(bookName, millionsSold);
 
-        // Connects the firstLink field to the new Link
+        // Connects the firstLink field to the new thinkthank.Link
 
         newLink.next = firstLink;
 
@@ -39,7 +41,7 @@ class LinkList {
 
         if (!isEmpty()) {
 
-            // Removes the Link from the List
+            // Removes the thinkthank.Link from the List
 
             firstLink = firstLink.next;
 
@@ -59,13 +61,13 @@ class LinkList {
 
         // Start at the reference stored in firstLink and
         // keep getting the references stored in next for
-        // every Link until next returns null
+        // every thinkthank.Link until next returns null
 
         while (theLink != null) {
 
             theLink.display();
 
-            System.out.println("Next Link: " + theLink.next);
+            System.out.println("Next thinkthank.Link: " + theLink.next);
 
             theLink = theLink.next;
 
@@ -94,7 +96,7 @@ class LinkList {
 
                 } else {
 
-                    // Found a matching Link in the LinkedList
+                    // Found a matching thinkthank.Link in the LinkedList
 
                     theLink = theLink.next;
 
@@ -121,7 +123,7 @@ class LinkList {
 
         while (currentLink.bookName != bookName) {
 
-            // Check if at the last Link in the LinkedList
+            // Check if at the last thinkthank.Link in the LinkedList
 
             if (currentLink.next == null) {
 
@@ -132,7 +134,7 @@ class LinkList {
             } else {
 
                 // We checked here so let's look in the
-                // next Link on the list
+                // next thinkthank.Link on the list
 
                 previousLink = currentLink;
 
@@ -152,9 +154,9 @@ class LinkList {
 
         } else {
 
-            // If you are here there was a match in a Link other
+            // If you are here there was a match in a thinkthank.Link other
             // than the firstLink. Assign the value of next for
-            // the Link you want to delete to the Link that's
+            // the thinkthank.Link you want to delete to the thinkthank.Link that's
             // next previously pointed to the reference to remove
 
             System.out.println("FOUND A MATCH");
