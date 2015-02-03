@@ -1,20 +1,20 @@
 public class Raute {
-    private double x, y;
+    private double xAusd, yAusd;
     private Punkt origin;
 
-    public Raute(Punkt origin, double x, double y) {
+    public Raute(Punkt origin, double xAusd, double yAusd) {
         /*
         Falls
             public class Raute extends Punkt {
         Dann
-            public Raute(Punkt origin, double x, double y) {
+            public Raute(Punkt origin, double xAusd, double yAusd) {
                 super(x, y);
                 ...
             }
          */
         this.origin = origin;
-        this.x = x;
-        this.y = y;
+        this.xAusd = xAusd;
+        this.yAusd = yAusd;
     }
 
     public void verschiebeX(double betrag) {
@@ -26,22 +26,22 @@ public class Raute {
     }
 
     public Punkt getP1() {
-        return new Punkt(origin.getX() - (this.x/2), origin.getY());
+        return new Punkt(origin.getX() - (this.xAusd /2), origin.getY());
     }
 
 
     public Punkt getP2() {
-        return new Punkt(origin.getX(), origin.getY() + (this.y/2));
+        return new Punkt(origin.getX(), origin.getY() + (this.yAusd /2));
     }
 
 
     public Punkt getP3() {
-        return new Punkt(origin.getX() + (this.x/2), origin.getY());
+        return new Punkt(origin.getX() + (this.xAusd /2), origin.getY());
     }
 
 
     public Punkt getP4() {
-        return new Punkt(origin.getX(), origin.getY() - (this.y/2));
+        return new Punkt(origin.getX(), origin.getY() - (this.yAusd /2));
     }
 
 
