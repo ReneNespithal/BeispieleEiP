@@ -2,9 +2,6 @@ package testing;
 
 import java.util.Arrays;
 
-/**
- * Created by ellw on 03.02.15.
- */
 public class TestingEnvironment {
     public static boolean istQuadratzahl(int zahl) {
         if (zahl == 0) {
