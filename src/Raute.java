@@ -1,9 +1,17 @@
-public class Raute extends Punkt {
+public class Raute {
     private double x, y;
     private Punkt origin;
 
     public Raute(Punkt origin, double x, double y) {
-        super(x, y);
+        /*
+        Falls
+            public class Raute extends Punkt {
+        Dann
+            public Raute(Punkt origin, double x, double y) {
+                super(x, y);
+                ...
+            }
+         */
         this.origin = origin;
         this.x = x;
         this.y = y;
@@ -39,7 +47,7 @@ public class Raute extends Punkt {
 
     public static void main(String[] args) {
         Punkt test = new Punkt(0.0, 0.0);
-        Raute test2 = new Raute(test, 1.0, 2.0);
+        Raute test2 = new Raute(test, 2.0, 4.0);
         System.out.println(test2.getP1().getX() + " " + test2.getP1().getY());
         System.out.println(test2.getP2().getX() + " " + test2.getP2().getY());
         System.out.println(test2.getP3().getX() + " " + test2.getP3().getY());
