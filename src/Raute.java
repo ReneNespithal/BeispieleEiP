@@ -2,19 +2,19 @@ public class Raute {
     private double xAusd, yAusd;
     private Punkt origin;
 
-    public Raute(Punkt origin, double xAusd, double yAusd) {
+    public Raute(Punkt origin, double x, double y) {
         /*
         Falls
             public class Raute extends Punkt {
         Dann
-            public Raute(Punkt origin, double xAusd, double yAusd) {
+            public Raute(Punkt origin, double x, double y) {
                 super(x, y);
                 ...
             }
          */
         this.origin = origin;
-        this.xAusd = xAusd;
-        this.yAusd = yAusd;
+        this.xAusd = x;
+        this.yAusd = y;
     }
 
     public void verschiebeX(double betrag) {
