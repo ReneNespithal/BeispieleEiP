@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 /**
  * Created by ellw on 03.02.15.
  */
@@ -30,6 +32,15 @@ public class TestingEnvironment {
         return test;
     }
 
+    public static void invertieren(int[] array) {
+        //System.out.println(Arrays.toString(array));
+        int[] newArray = new int[array.length];
+        for (int i = 0; i < array.length; i++) {
+            newArray[i] = array[(array.length - 1) - i];
+        }
+        //System.out.println(Arrays.toString(newArray));
+    }
+
 
     public static void main(String[] args) {
         System.out.println(istQuadratzahl(0));
@@ -43,5 +54,7 @@ public class TestingEnvironment {
             System.out.print(fibonacci[i] + " ");
         }
         System.out.println("}"); // { 0 1 1 2 3 5 }
+        int[] test3 = {0, 1, 2};
+        invertieren(test3);
     }
 }
