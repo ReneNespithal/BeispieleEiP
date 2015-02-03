@@ -7,37 +7,6 @@ public class Suche {
         }
         return false;
     }
-    /*
-    public static boolean sucheBinaer(int[] array, int wert) {
-        // Leeres Array
-        if (array.length <= 1) {
-            return false;
-
-        }
-        int mitte = array.length/2;
-        // Falls Mitte gleich Wert return true
-        if (array[mitte] == wert) {
-            return true;
-        }
-        // Falls Mitte größer als der Wert ist
-        if (array[mitte] > wert) {
-            int[] test = new int[mitte];
-            for (int i = 0; i < mitte; i++) {
-                test[i] = array[i];
-            }
-            sucheBinaer(test, wert);
-        }
-        // Falls Mitte kleiner als der Wert
-        if (array[mitte] < wert) {
-            int[] test2 = new int[array.length - mitte];
-            for (int i = 0; i < array.length - mitte; i++) {
-                test2[i] = array[mitte+i];
-            }
-            sucheBinaer(test2, wert);
-        }
-        return false;
-    }
-    */
 
     private static boolean hilfsfkt(int wert, int[] array, int start, int end) {
         if (start >= end) {
